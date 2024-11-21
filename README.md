@@ -1,89 +1,37 @@
-Great! If you've implemented your project using Google Colab, we can adjust the README to reflect that, including details on how to run the Colab notebook. Below is a revised version of the README specifically tailored for a project that is executed within Google Colab.
 
-```markdown
-# RAG-QA-Retrieval
+**RAG-QA-Retrieval**
 
-## Overview
+This is a project that implements a Document Question Answering (QA) system using Retrieval-Augmented Generation (RAG) techniques alongside OpenAI's GPT-4 model. This system retrieves relevant information from a document corpus to generate accurate answers to user queries.
 
-**RAG-QA-Retrieval** is a project that implements a Document Question Answering (QA) system using Retrieval-Augmented Generation (RAG) techniques alongside OpenAI's GPT-4 model. This system retrieves relevant information from a document corpus to generate accurate answers to user queries.
+### Features
 
-## Table of Contents
+The project includes several key features: it integrates retrieval techniques with GPT-4’s generative capabilities for improved question answering; it efficiently processes and indexes documents for quick retrieval; it provides a user-friendly interface that allows users to ask questions and receive answers; and it is customizable, making it easily adjustable for different datasets and document formats.
 
-- [Features](#features)
-- [Google Colab Setup](#google-colab-setup)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+### Google Colab Setup
 
-## Features
+To run this project in Google Colab, follow these steps: 
 
-- **Retrieval-Augmented Generation**: Integrates retrieval techniques with GPT-4’s generative capabilities for improved question answering.
-- **Document Processing**: Efficiently processes and indexes documents for quick retrieval.
-- **User-Friendly Interface**: Provides an interactive environment for users to ask questions and receive answers.
-- **Customizable**: Easily adjustable for different datasets and document formats.
+First, open the Colab Notebook by clicking on the provided link to access the Colab notebook. At the beginning of the notebook, make sure to run the code cell that installs the necessary libraries. 
 
-## Google Colab Setup
+Next, upload your documents directly to the Colab environment using the provided code snippet that allows for file uploads. 
 
-To run this project in Google Colab, follow these steps:
+Also, ensure that you set up any necessary API keys, such as for OpenAI, in the notebook environment. You can input them directly in the notebook or store them securely.
 
-1. **Open the Colab Notebook**:
-   - Click [here](https://github.com/Ricky0731/RAG-QA-RETRIVAL/blob/main/Document_QA_with_GPT_4o_RAG.ipynb) to open the Colab notebook.
+### Usage
 
-2. **Install Required Libraries**:
-   - Make sure to run the following code cell at the beginning of the notebook to install the necessary libraries:
+To use the project, execute the cells in the notebook sequentially to build the retrieval system and initialize the model. Once the setup is complete, you can input your queries in the designated cell, and the system will return answers based on the retrieved documents. Example queries include questions like "What is the main topic of the document?" or "Can you summarize the key points discussed in section X?"
 
-3. **Upload Your Documents**:
-   - You can upload your documents directly to the Colab environment. Use the following code snippet to upload files:
-   ```python
-   from google.colab import files
-   uploaded = files.upload()
-   ```
+### Project Structure
 
-4. **Set Up API Keys**:
-   - Ensure you set up any necessary API keys (such as for OpenAI) in the notebook environment. You can input them directly in the notebook or store them securely.
+The project structure within the Colab environment includes the main Colab notebook, titled Document_QA_with_GPT_4o_RAG.ipynb, and a folder for documents, which are uploaded during runtime.
 
-## Usage
+### Contributing
 
-1. **Run the Cells**:
-   - Execute the cells in the notebook sequentially to build the retrieval system and initialize the model.
-  
-2. **Ask Questions**:
-   - Once the setup is complete, you can input your queries in the designated cell, and the system will return answers based on the retrieved documents.
+Contributions are welcome! If you have suggestions for improvements or want to add features, please open an issue or submit a pull request. To contribute, fork the repository, create a new branch, make your changes, commit them, push to the branch, and then open a pull request.
 
-3. **Example Queries**:
-   - "What is the main topic of the document?"
-   - "Can you summarize the key points discussed in section X?"
 
-## Project Structure
+### Acknowledgments
 
-Here is a brief overview of the project structure within the Colab environment:
-
-```
-RAG-QA-Retrieval/
-│
-├── Document_QA_with_GPT_4o_RAG.ipynb  # Main Colab notebook
-└── documents/                          # Folder for documents (uploaded during runtime)
-```
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or want to add features, please open an issue or submit a pull request.
-
-### Steps to Contribute:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature-branch`.
-5. Open a pull request.
-
-## Acknowledgments
-
-- Thanks to OpenAI for providing the GPT-4 API.
-- Special thanks to the contributors and libraries used in this project.
+Special thanks to OpenAI for providing the GPT-4 API and to all contributors and libraries used in this project. For any inquiries or further assistance, please feel free to reach out!
 
 ---
-
-For any inquiries or further assistance, please feel free to reach out!
-```
